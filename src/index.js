@@ -3,10 +3,10 @@ import './index.css'
 import ReactDOM from 'react-dom';
 import React from 'react';
 
-import Primeiro from './conponents/basicos/Primeiro'
+import Primeiro from './conponents/basicos/Primeiro';
 
 //contate de um elemento pelo ID
-//const el =document.getElementById('root')
+//const el =document.getElementById('root');
 
 
 
