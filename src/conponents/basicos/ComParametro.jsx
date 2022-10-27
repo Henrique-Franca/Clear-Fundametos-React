@@ -1,5 +1,6 @@
 import React from "react"
 export default function ComParametro(props){
+    //propriedades ou props são usadas apenas para leitura
 
     const status = props.nota >= 7 ? 'Aprovado' : 'Recuperação';
 
