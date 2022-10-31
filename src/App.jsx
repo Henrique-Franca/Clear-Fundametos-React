@@ -15,17 +15,17 @@ export default _ =>
         <h1>Fundamentos React </h1>
 
         <div className="Cards">
-        <Cards titulo="#03Fragmento">
+        <Cards titulo="#03Fragmento" color="#080">
         <Fragmento/>
         </Cards>
 
-        <Cards titulo="#02 Segundo Componente">
+        <Cards titulo="#02 Segundo Componente" color="#780">
         <ComParametro 
         titulo='Segundo Componente!' 
         aluno='Pedro' nota={9.3}/>
         </Cards>
 
-        <Cards titulo="#01 Primeiro Componente">
+        <Cards titulo="#01 Primeiro Componente" color='660'>
         <Fragmento/>
         </Cards>
         </div>
