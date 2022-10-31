@@ -1,3 +1,4 @@
+import './App.css'
 import React from "react";
 
 import Cards from './conponents/layout/Cards'
@@ -10,9 +11,10 @@ export default _ =>
 
     //sintaxe jsx(parece html mas não é)
     //precia sempre estar envolvido por uma tag como o <div>
-    <div id='app'>
+    <div className='App'>
         <h1>Fundamentos React </h1>
 
+        <div className="Cards">
         <Cards titulo="#03Fragmento">
         <Fragmento/>
         </Cards>
@@ -26,6 +28,9 @@ export default _ =>
         <Cards titulo="#01 Primeiro Componente">
         <Fragmento/>
         </Cards>
+        </div>
+
+        
     </div>
     
 
