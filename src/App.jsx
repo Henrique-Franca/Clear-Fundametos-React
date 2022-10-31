@@ -1,6 +1,7 @@
 import './App.css'
 import React from "react";
 
+import Familia from './conponents/basicos/Familia';
 import Cards from './conponents/layout/Cards'
 import Primeiro from './conponents/basicos/Primeiro';
 import ComParametro from './conponents/basicos/ComParametro';
@@ -15,6 +16,11 @@ export default _ =>
         <h1>Fundamentos React </h1>
 
         <div className="Cards">
+
+        <Cards titulo="#03Fragmento" color="#808">
+        <Familia sobrenome = "Ferreira"/>
+        </Cards>
+
         <Cards titulo="#03Fragmento" color="#080">
         <Fragmento/>
         </Cards>
@@ -25,9 +31,10 @@ export default _ =>
         aluno='Pedro' nota={9.3}/>
         </Cards>
 
-        <Cards titulo="#01 Primeiro Componente" color='660'>
-        <Fragmento/>
+        <Cards titulo="#01 Primeiro Componente" color='#660'>
+        <Primeiro/>
         </Cards>
+
         </div>
 
         
