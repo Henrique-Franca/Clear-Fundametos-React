@@ -1,6 +1,7 @@
 import './App.css'
 import React from "react";
 
+import Usuarioinfo from './conponents/condicional/Usuarioinfo';
 import ParOuImpar from './conponents/condicional/ParOuImpar';
 import TabelaProdutos from './conponents/repetição/TabelaProdutos';
 import ListaAlunos from './conponents/repetição/ListaAlunos';
@@ -22,7 +23,9 @@ export default _ =>
 
 
             <Cards titulo="#07Renderisação" color="#bb4">
-                <ParOuImpar/>
+                <ParOuImpar numero={22}/>
+                <Usuarioinfo usuario={{nome:'Fernando'}}></Usuarioinfo>
+                <Usuarioinfo usuario={{}}></Usuarioinfo>
             </Cards>   
 
             <Cards titulo="#06Tabela de Repetião" color="#a24">
