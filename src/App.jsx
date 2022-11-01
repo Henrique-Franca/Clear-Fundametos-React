@@ -1,6 +1,7 @@
 import './App.css'
 import React from "react";
 
+import IndiretaPai from './conponents/comunicação/IndiretaPai';
 import DiretaPai from './conponents/comunicação/DiretaPai';
 import Usuarioinfo from './conponents/condicional/Usuarioinfo';
 import ParOuImpar from './conponents/condicional/ParOuImpar';
@@ -13,6 +14,7 @@ import Primeiro from './conponents/basicos/Primeiro';
 import ComParametro from './conponents/basicos/ComParametro';
 import Fragmento from './conponents/basicos/Fragment';
 
+
 //forma masi reduzida de uma função
 export default _ =>                                                                                           
 
@@ -22,7 +24,13 @@ export default _ =>
         <h1>Fundamentos React </h1>
         <div className="Cards">
 
-            <Cards titulo="#08Comunicação" color="#b74">
+        <Cards titulo="#09Comunicação Indireta" color="#789">
+                <IndiretaPai />
+                
+            </Cards>  
+
+
+            <Cards titulo="#08Comunicação Direta" color="#b74">
                 <DiretaPai />
                 
             </Cards>  
