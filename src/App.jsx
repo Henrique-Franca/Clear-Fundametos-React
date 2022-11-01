@@ -1,6 +1,7 @@
 import './App.css'
 import React from "react";
 
+import ParOuImpar from './conponents/condicional/ParOuImpar';
 import TabelaProdutos from './conponents/repetição/TabelaProdutos';
 import ListaAlunos from './conponents/repetição/ListaAlunos';
 import FamiliaMembro from './conponents/basicos/FamiliaMembro';
@@ -17,12 +18,16 @@ export default _ =>
     //precia sempre estar envolvido por uma tag como o <div>
     <div className='App'>
         <h1>Fundamentos React </h1>
-
         <div className="Cards">
+
+
+            <Cards titulo="#07Renderisação" color="#bb4">
+                <ParOuImpar/>
+            </Cards>   
 
             <Cards titulo="#06Tabela de Repetião" color="#a24">
                 <TabelaProdutos/>
-            </Cards>
+            </Cards>   
 
             <Cards titulo="#05Repetição" color="#fa4">
                 <ListaAlunos/>
