@@ -1,6 +1,7 @@
 import './App.css'
 import React from "react";
 
+import DiretaPai from './conponents/comunicação/DiretaPai';
 import Usuarioinfo from './conponents/condicional/Usuarioinfo';
 import ParOuImpar from './conponents/condicional/ParOuImpar';
 import TabelaProdutos from './conponents/repetição/TabelaProdutos';
@@ -21,6 +22,10 @@ export default _ =>
         <h1>Fundamentos React </h1>
         <div className="Cards">
 
+            <Cards titulo="#08Comunicação" color="#b74">
+                <DiretaPai />
+                
+            </Cards>  
 
             <Cards titulo="#07Renderisação" color="#bb4">
                 <ParOuImpar numero={22}/>
