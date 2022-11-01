@@ -7,8 +7,8 @@ export default  props =>{
 
         <div>
             {
-                props.children.map((child) =>{
-                    return cloneElement(child, props)
+                props.children.map((child, i) =>{
+                    return cloneElement(child, {...props, key: i});
                 })
             }
             

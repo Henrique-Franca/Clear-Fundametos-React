@@ -1,6 +1,7 @@
 import './App.css'
 import React from "react";
 
+import ListaAlunos from './conponents/repetição/ListaAlunos';
 import FamiliaMembro from './conponents/basicos/FamiliaMembro';
 import Familia from './conponents/basicos/Familia';
 import Cards from './conponents/layout/Cards'
@@ -18,27 +19,31 @@ export default _ =>
 
         <div className="Cards">
 
-        <Cards titulo="#03Fragmento" color="#808">
-        <Familia sobrenome = "Ferreira">
-            <FamiliaMembro nome="Pedro" />
-            <FamiliaMembro nome="Ana" />
-            <FamiliaMembro nome="Gustavo" />
-        </Familia>
-        </Cards>
+            <Cards titulo="#05Repetição" color="#fa4">
+                <ListaAlunos/>
+            </Cards>
 
-        <Cards titulo="#03Fragmento" color="#080">
-        <Fragmento/>
-        </Cards>
+            <Cards titulo="#04Familia" color="#808">
+            <Familia sobrenome = "Silva">
+                <FamiliaMembro nome="Pedro" />
+                <FamiliaMembro nome="Ana" />
+                <FamiliaMembro nome="Gustavo" />
+            </Familia>
+            </Cards>
 
-        <Cards titulo="#02 Segundo Componente" color="#780">
-        <ComParametro 
-        titulo='Segundo Componente!' 
-        aluno='Pedro' nota={9.3}/>
-        </Cards>
+            <Cards titulo="#03Fragmento" color="#080">
+            <Fragmento/>
+            </Cards>
 
-        <Cards titulo="#01 Primeiro Componente" color='#660'>
-        <Primeiro/>
-        </Cards>
+            <Cards titulo="#02 Segundo Componente" color="#780">
+            <ComParametro 
+            titulo='Segundo Componente!' 
+            aluno='Pedro' nota={9.3}/>
+            </Cards>
+
+            <Cards titulo="#01 Primeiro Componente" color='#660'>
+            <Primeiro/>
+            </Cards>
 
         </div>
 
